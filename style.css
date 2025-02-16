@@ -1,0 +1,950 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* overflow-x: hidden; */
+  
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.main{
+    /* background-image: url(stars\ GIF.gif);
+    background-repeat:repeat;
+    background-position: center;
+    background-size:contain; */
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+.sidebar{
+    position: fixed;
+    width: 339px;
+    height: 100vh;
+    border: black solid 2px;
+    background-color: black;
+    box-shadow: 5px 0px 20px #09c6c6; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+
+.main .sidebar .logo img{
+    position: relative;
+    height: 213px;
+    width:213px;
+    border-radius: 50%;
+    z-index: 13;
+    left: 60px;
+    top: -180px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
+}
+
+.main .sidebar .logo img:hover{
+    height: 217px;
+    width:217px;
+    /* left: 55px;
+    top: -190px; */
+    transition: 0.2s ease-in-out;
+    filter:drop-shadow(0 0 15px rgba(0, 255, 255, 0.755) );
+
+}
+
+.main .sidebar .logo .border{
+    position: relative;
+    height: 194px;
+    width:194px;
+    border-radius: 50%;
+    border:black 10px solid;
+    z-index: 5;
+    left: 60px;
+    top: -65px;
+    opacity: 0.5;
+    box-shadow: 0px 0px 50px black;
+
+}
+
+.main .sidebar .logo h1{
+    position: relative;
+    left: 60px;
+    top: -165px;
+    color: white;
+    font-family: "Lilita One", serif;
+    font-weight: 300;
+    font-size: 30px;
+    /* line-height: 3px;
+  */
+}
+.main .sidebar .logo h1:hover{
+    filter: drop-shadow(0px 0px 10px rgba(0, 255, 255, 0.759));
+}
+
+.main .sidebar .logo h3{
+    font-family: "Varela Round", serif;
+    font-weight: 600;
+    position: relative;
+    left: 160px;
+    top: -160px;
+    color: white;
+   
+}
+.main .sidebar .logo .line{
+    border: 2px rgb(255, 255, 255) solid;
+    position: relative;
+     left: 110px; 
+    top: -162px;
+    width: 180px;
+    
+}
+.nav{
+position: relative;
+width: 339px;
+height: 200px;
+top: -20px;
+
+
+}
+.nav a{
+    font-size: 22px;
+    position: relative;
+    line-height: 80px;
+    left: 100px;
+    top: -124px;
+    color: white;
+    text-decoration: none;
+    font-family: "Lilita One", serif;
+    font-weight: 100;
+    /* transition: 0.8s ease-in-out; */
+}
+.nav a:hover{
+    filter: drop-shadow(4px 4px 15px #00FFFF);
+    transition: 0.1s ease-in-out;
+    font-size: 25px;
+}
+
+.nav a i{
+    /* padding-left: 5px; */
+    padding-right: 10px;
+}
+
+.social{
+    position: relative;
+    top: -30px;
+    /* text-align: center; */
+    padding-bottom: 20px;
+    width: 100%;
+    bottom: 10px;
+    margin-top: auto;
+    
+}
+.social a{
+    position: relative;
+    left: 40px;
+    top: 20px;
+    font-size: 25px;
+    padding-left: 20px;
+    color: white;
+}
+
+.social a:hover{
+    font-size: 29px;
+    filter: drop-shadow(3px 3px 5px #00FFFF);
+
+
+}
+
+.neon_shape{
+    position:relative;
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    background:radial-gradient(circle, #00ffff,#03e1e1,#01cccc) ;
+    /* background: radial-gradient(circle, #9d4edd, #7b2cbf, #5a189a); */
+    /* justify-self:center;
+    align-self: center; */
+    top: 200px;
+    left: 50%;
+    filter: blur(60px);
+    box-shadow: 0 0 60px #09c6c6, 0 0 100px #09c6c6, 0 0 150px #09c6c6;
+}
+
+.info{
+position:fixed;
+left:350px;
+height:100vh;
+width: 100vw;
+
+}
+
+.skills{
+    top: 157px;
+    /* left: -300px; */
+    left:80px;
+    z-index: 3;
+    position: relative;
+    height:250px;
+    width:250px;
+    border-radius: 10px;
+    border: 5px  grey solid;
+    background-color: black;
+}
+
+.skills:hover{
+    transition: 0.2s ease-in-out;
+    height:255px;
+    width:255px;
+    box-shadow: 2px 2px 20px #00FFFF;
+}
+
+.current_projects{
+    top: -102px;
+    /* left: -10px; */
+    left:380px;
+    z-index: 3;
+    position: relative;
+    height:250px;
+    width:250px;
+    border-radius: 10px;
+    border: 5px  grey solid;
+    background-color: black;
+}
+
+.current_projects:hover{
+    transition: 0.2s ease-in-out;
+    height:255px;
+    width:255px;
+    box-shadow: 2px 2px 20px #00FFFF;
+}
+
+.goal{
+    position: relative;
+    top:-64px;
+    left:80px;
+    height:250px;
+    z-index: 3;
+    width:250px;
+    border-radius: 10px;
+    border: 5px  grey solid;
+    background-color: black;
+}
+.goal:hover{
+    transition: 0.2s ease-in-out;
+    height:255px;
+    width:255px;
+    box-shadow: 2px 2px 20px #00FFFF;
+}
+
+.achive{
+    position: relative;
+    top: -322px;
+    /* left: -10px; */
+    left:380px;
+    z-index: 3;
+    height:250px;
+    width:250px;
+    border-radius: 10px;
+    border: 5px  grey solid;
+    background-color: black;
+}
+
+.achive:hover{
+    transition: 0.2s ease-in-out;
+    height:255px;
+    width:255px;
+    box-shadow: 2px 2px 20px #00FFFF;
+}
+
+.about{
+    position: relative;
+    background-color: black;
+    height: 506px;
+    width: 291px;
+    z-index: 3;
+    border: 5px grey solid;
+    border-radius: 10px;
+    top: -872px;
+    left:700px;
+}
+
+.about:hover{
+    transition: 0.2s ease-in-out;
+    height:515px;
+    width:301px;
+    left:690px;
+    box-shadow: 2px 2px 20px #00FFFF;
+    font-size: 17px;
+}
+
+.info .skills img{
+    margin-left: 28px;
+    width: 200px;
+    height: 200px;
+}
+.info .skills img:hover{
+    margin-left: 23px;
+    width: 205px;
+    height: 205px;
+    filter: drop-shadow(2px 2px 8px #0fffff);
+    transition: 0.2s ease-in-out;
+}
+
+.info .skills a{
+    color: white;
+    font-family: "Lilita One", serif;
+    font-weight: 200;
+    padding-left: 50px;
+    font-size: 30px;
+    text-decoration: none;
+}
+.info .skills a:hover{
+    transition: 0.2s ease-in-out;
+    font-size: 33px;
+    padding-left: 47px;
+}
+
+.info .current_projects a{
+    color: white;
+    font-family: "Lilita One", serif;
+    font-weight: 200;
+    padding-left: 50px;
+    font-size: 30px;
+    text-decoration: none;
+}
+.info .current_projects a:hover{
+    transition: 0.2s ease-in-out;
+    font-size: 33px;
+    padding-left: 47px;
+}
+
+.info .current_projects img{
+    /* margin-top: -45px; */
+    width: 250px;
+    height: 200px;
+}
+.info .current_projects img:hover{
+    width: 252px;
+    height: 202px;
+    filter: drop-shadow(2px 2px 8px #0fffff);
+    transition: 0.2s ease-in-out;
+}
+.info .goal a{
+    color: white;
+    font-family: "Lilita One", serif;
+    font-weight: 200;
+    padding-left: 50px;
+    font-size: 30px;
+    text-decoration: none;
+}
+.info .goal a:hover{
+    transition: 0.2s ease-in-out;
+    font-size: 33px;
+    padding-left: 47px;
+}
+
+.info .goal img{
+    /* margin-top: 45px; */
+    margin-left: 30px;
+    width: 200px;
+    height: 200px;
+}
+.info .goal img:hover{
+    width: 210x;
+    height: 210px;
+    filter: drop-shadow(2px 2px 8px #0fffff);
+    transition: 0.2s ease-in-out;
+}
+
+.info .achive a{
+    color: white;
+    font-family: "Lilita One", serif;
+    font-weight: 200;
+    padding-left: 20px;
+    font-size: 30px;
+    text-decoration: none;
+}
+.info .achive a:hover{
+    transition: 0.2s ease-in-out;
+    font-size: 28px;
+    padding-left: 17px;
+}
+
+.info .achive img{
+    margin-left: 30px;
+    width: 200px;
+    height: 200px;
+}
+.info .achive img:hover{
+    margin-top: -5px;
+    width: 210x;
+    height: 210px;
+    filter: drop-shadow(2px 2px 8px #0fffff);
+    transition: 0.2s ease-in-out;
+}
+
+.info .about h1{
+    color: white;
+    font-family: "Lilita One", serif;
+    font-weight: 200;
+    padding-left: 15px;
+    padding-top: 10px;
+    z-index: -8;
+}
+.info .about h1 img{
+    position: relative;
+    height: 90px;
+    width: 90px;
+    padding-left: 150px;
+    top: -37px;
+}
+.info .about img:hover{
+    width: 95px;
+    height: 95px;
+    filter: drop-shadow(2px 2px 8px #0fffff);
+    transition: 0.2s ease-in-out;
+}
+.info .about p{
+    position: relative;
+    color: white;
+    font-family: "Jost", serif;
+    line-height: 30px;
+    padding: 10px 20px 10px 20px;
+    top: -90px;
+
+
+}
+
+/*Contact Page*/
+
+.container h1{
+    margin-top: 10px;
+    font-family: "Rowdies", serif;
+    font-size: 70px;
+    text-align: center;
+}
+.container img{
+    height: 400px;
+    width: 400px;
+    margin-left: 35%;
+}
+.container form{
+    margin-top: 20px;
+    height: 500px;
+    align-items: center;
+    justify-content:center;
+    width: 500px;
+    border: 4px solid black;
+    margin-left: 34%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+.name{
+    height: 25px;
+    width: 400px;
+    background-color:rgba(0, 0, 0, 0.4);
+    color: white;
+    border-radius: 5px;
+    border: 3px solid black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.email{
+    height: 25px;
+    width: 400px;
+    background-color:rgba(0, 0, 0, 0.4);
+    color: white;
+    border-radius: 5px;
+    border: 3px solid black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.Subject{
+    height: 25px;
+    width: 400px;
+    background-color:rgba(0, 0, 0, 0.4);
+    color: white;
+    border-radius: 5px;
+    border: 3px solid black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.message{
+    height: 200px;
+    width: 400px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    background-color:rgba(0, 0, 0, 0.4);
+    color: white;
+    border-radius: 5px;
+    border: 3px solid black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.container{
+
+    position:relative;
+    background-color: blanchedalmond;
+}
+.container form input{
+    margin: 20px 20px 20px 50px;
+}
+#submit{
+    height: 20px;
+    width: 30px;
+
+}
+
+.container form a{
+    border: 2px solid black;
+    height: 50px;
+    width: 10px;
+    margin-left: 150px;
+    padding: 10px 30px 10px 30px;
+    border-radius: 20px;
+    font-family: "Varela Round", serif;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+}
+
+/*skills section*/
+
+.main_body{
+    position: relative;
+    background-image: url(backgr.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px; 
+    align-items: center;
+    padding: 50px;
+    width: 100vw;
+    min-height: 100vh; 
+    
+}
+.main_body p{
+    padding: 20px 10px 20px 10px;
+    line-height: 25px;
+    font-weight: 500;
+}
+.main_body h2{
+    text-shadow: black;
+    color: #f0f0f0;
+    line-height: 1.5;
+    filter: drop-shadow(2px 2px 17px black);
+    
+}
+.content{
+    height: 350px;
+    width: 300px;
+    position:relative;
+    margin-top: 150px;
+    /* height: 1340px; */
+    max-width: 800px; 
+    border: 2px grey solid;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 2px 2px 15px cyan;
+    /* margin-left:380px; */
+    backdrop-filter: blur(3px); 
+    font-family: "Lilita One", serif;
+    color: white;
+    /* filter: drop-shadow(2px 2px 8px black); */
+}
+
+.Graphic{
+    height: 350px;
+    width: 300px;
+    position:relative;
+    margin-top: 150px;
+    /* height: 1340px; */
+    max-width: 800px; 
+    border: 2px grey solid;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 2px 2px 15px cyan;
+    /* margin-left:380px; */
+    backdrop-filter: blur(3px); 
+    font-family: "Lilita One", serif;
+    /* color: white; */
+    /* filter: drop-shadow(2px 2px 8px black); */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.webdev{
+    height: 350px;
+    width: 300px;
+    position:relative;
+    margin-top: 150px;
+    /* height: 1340px; */
+    max-width: 800px; 
+    border: 2px grey solid;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 2px 2px 15px cyan;
+    /* margin-left:380px; */
+    backdrop-filter: blur(3px); 
+    font-family: "Lilita One", serif;
+    /* color: white; */
+    /* filter: drop-shadow(2px 2px 8px black); */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.video{
+    height: 350px;
+    width: 300px;
+    position:relative;
+    margin-top: 150px;
+    /* height: 1340px; */
+    max-width: 800px; 
+    border: 2px grey solid;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 2px 2px 15px cyan;
+    /* margin-left:380px; */
+    backdrop-filter: blur(3px); 
+    font-family: "Lilita One", serif;
+    /* color: white; */
+    /* filter: drop-shadow(2px 2px 8px black); */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.programming{
+    height: 350px;
+    width: 300px;
+    position:relative;
+    margin-top: 150px;
+    /* height: 1340px; */
+    max-width: 800px; 
+    border: 2px grey solid;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 2px 2px 15px cyan;
+    /* margin-left:380px; */
+    backdrop-filter: blur(3px); 
+    font-family: "Lilita One", serif;
+    /* color: white; */
+    /* filter: drop-shadow(2px 2px 8px black); */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.social_media{
+    height: 350px;
+    width: 300px;
+    position:relative;
+    margin-top: 150px;
+    /* height: 1340px; */
+    max-width: 800px; 
+    border: 2px grey solid;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 2px 2px 15px cyan;
+    /* margin-left:380px; */
+    backdrop-filter: blur(3px); 
+    font-family: "Lilita One", serif;
+    /* color: white; */
+    /* filter: drop-shadow(2px 2px 8px black); */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.UI{
+    height: 350px;
+    width: 300px;
+    position:relative;
+    margin-top: 150px;
+    /* height: 1340px; */
+    max-width: 800px; 
+    border: 2px grey solid;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 2px 2px 15px cyan;
+    /* margin-left:380px; */
+    backdrop-filter: blur(3px); 
+    font-family: "Lilita One", serif;
+    /* color: white;
+    filter: drop-shadow(2px 2px 8px black); */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.skills_div{
+    position: fixed;
+    color: #048383;
+    top: 10px;
+    height: 150px;
+    /* width:100vw; */
+    filter: drop-shadow(2px 2px 8px black);
+    font-family: "Lilita One", serif;
+    /* margin-left: 30px; */
+    margin-top: 50px;
+    /* padding: 20px 0px 30px 0px; */
+    
+}
+.main_body p{
+    font-family: "Varela Round", serif;
+    color: black ;
+    z-index: 56;
+}
+/* .main_body .expertise{
+    position:relative;
+    margin-top: 150px;
+    /* height: 1340px; */
+    /* max-width: 800px; 
+    border: 2px grey solid;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 2px 2px 15px cyan;
+    margin-left:380px;
+    backdrop-filter: blur(3px); 
+}   */
+   
+    /*Project Section*/
+
+.my_projects{
+    position:relative;
+    background-image: url(project.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    justify-content: space-evenly;
+}
+.heading{
+    position: fixed;
+   text-align: center;
+    height: 30px;
+    width: 100vw;
+    font-family: "Lilita One", serif;
+    margin: 30px;
+    color:goldenrod;
+    filter: drop-shadow(5px 5px 5px black );
+}
+.my_projects .web1{
+    position: relative;
+    top: 100px;
+    height: 300px;
+    width: 300px;
+    border: 2px black solid;
+    border-radius: 20px;
+    margin: 50px;
+    background-color: rgba(255, 255, 255, 0.45);
+    backdrop-filter:blur(3px);
+    
+    
+}
+.my_projects .web1 h1{
+    font-family: "Lilita One", serif;
+    padding: 20px 10px 10px 20px;
+    font-size: 25px;
+    color: #048383;
+}
+.my_projects .web1 p{
+
+    padding: 20px 20px 20px 20px;
+    font-family: "Varela Round", serif;
+    line-height: 25px;
+
+}
+.my_projects .web1 a{
+    position: relative;
+    top: 50px;
+    left: 80px;
+    font-family: "Varela Round", serif;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: 2px black solid;
+    border-radius: 30px;
+    background-color: chocolate;
+    color: white;
+
+}
+.my_projects .web2{
+    position: relative;
+    top: 100px;
+    height: 300px;
+    width: 300px;
+    border: 2px black solid;
+    border-radius: 20px;
+    margin: 50px;
+    background-color: rgba(255, 255, 255, 0.45);
+    backdrop-filter:blur(3px);
+    
+}
+.my_projects .web2 h1{
+    font-family: "Lilita One", serif;
+    padding: 20px 10px 10px 20px;
+    font-size: 30px;
+    color: #048383;
+}
+.my_projects .web2 p{
+
+    padding: 20px 20px 20px 20px;
+    font-family: "Varela Round", serif;
+    line-height: 30px;
+
+}
+.my_projects .web2 a{
+    position: relative;
+    top: 28px;
+    left: 80px;
+    font-family: "Varela Round", serif;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: 2px black solid;
+    border-radius: 30px;
+    background-color: chocolate;
+    color: white;
+
+}
+.my_projects .web3{
+    position: relative;
+    top: 100px;
+    height: 300px;
+    width: 300px;
+    border: 2px black solid;
+    border-radius: 20px;
+    margin: 50px;
+    background-color: rgba(255, 255, 255, 0.45);
+    backdrop-filter:blur(3px);
+    
+}
+.my_projects .web3 h1{
+    font-family: "Lilita One", serif;
+    padding: 20px 10px 10px 20px;
+    font-size: 25px;
+    color: #048383;
+}
+
+/*achivements*/
+
+.full_body{
+    position:relative;
+    background-image: url(achive.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: space-evenly;
+    filter: blur(9px);
+    /* filter: blur(9px); */
+}
+
+.full_body h1{
+    position: fixed;
+    text-align: center;
+    font-family: "Lilita One", serif;
+    filter: drop-shadow(5px 5px 8px black);
+    padding: 20px 10px 10px 20px;
+    font-size: 30px;
+    color: #03cece;
+}
+.cert1{
+    position: relative;
+    height: 500px;
+    width:800px;
+}
+.cert1 img{
+    position: relative;
+    height: 390px;
+    width:690px;
+}
+.cert1 h2{
+    position: relative;
+    text-align: center;
+}
+.cert2{
+    position: relative;
+    height: 500px;
+    width:800px;
+}
+.cert2 img{
+    position: relative;
+    height: 390px;
+    width:690px;
+}
+.cert2 h2{
+    position: relative;
+    text-align: center;
+}
+.achive_error img{
+    position: relative;
+    top: 400px;
+    height: 700px;
+    width: 700px;
+    align-items: center;
+    justify-content: center;
+}
+.achive_error p{
+    position: relative;
+    top: 400px;
+    height: 700px;
+    width: 700px;
+    text-align: center;
+}
+/*goal area*/
+
+.goal_div{
+    background-image: url(goal.png);
+    position:relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: blur(9px);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: space-evenly;
+    z-index: -9;
+}
+
+.error_goal img{
+    height: 800px;
+    width:800px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 350px;
+    margin-top: -665px;
+    z-index: 5;
+}
+.error_goal h1{
+    font-family: "Lilita One", serif;
+    filter: drop-shadow(5px 5px 8px black);
+    padding: 20px 10px 10px 20px;
+    font-size: 100px;
+    color: #03cece;
+    text-align: center;
+    margin-top: -965px;
+    z-index: 5;
+
+}
