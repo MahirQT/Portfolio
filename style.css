@@ -8,6 +8,7 @@
 body{
     height: 100vh;
     width: 100vw;
+    background-color: black;
 }
 
 .main{
@@ -420,32 +421,11 @@ width: 100vw;
 
 /*Contact Page*/
 
-
-.container{
-   
-    background-image: url(contact\ background.png);
-    position: relative;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: scroll;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 20px; 
-    align-items: center;
-    padding: 50px;
-    width: 100vw;
-    min-height: 100vh; 
-    
-}
-
 .container h1{
     margin-top: 10px;
     font-family: "Rowdies", serif;
     font-size: 70px;
     text-align: center;
-
 }
 .container img{
     height: 400px;
@@ -968,4 +948,295 @@ width: 100vw;
     margin-top: -965px;
     z-index: 5;
 
-}
+} 
+
+/*Achievenment section*/
+        /* Main content area */
+        .main-content {
+        padding: 10rem 1rem 4rem;
+        max-width: 1400px;
+        margin: 0 auto;
+        width: 95%;
+        background-color: black;
+     }
+        
+        /* Achievements heading with quantum gradient */
+        .achievements-heading {
+        font-size: 2.8rem;
+        margin-bottom: 3rem;
+        background: linear-gradient(45deg, #ff8a00, #e52e71);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        }
+        
+        /* Achievements container with quantum styling */
+        .achievements-container {
+            display: flex;
+            gap: 2.5rem;
+            justify-content: center;
+            margin-top: 2rem;
+            width: 100%;
+        }
+        
+        /* Achievement boxes with quantum design */
+        .achievement-box {
+            flex: 1;
+            background: rgba(30, 30, 30, 0.7);
+            border-radius: 15px;
+            padding: 2.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            min-height: 350px;
+            position: relative;
+            overflow: hidden;
+            min-width: 45%;
+            max-width: 400px;
+        }
+        
+        .achievement-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px cyan;
+        }
+        
+        .achievement-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, cyan, #02aaaa);
+        }
+        
+        .achievement-box h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(45deg, cyan, #02aaaa);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-align: center;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .achievement-box ul {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.1rem;
+            line-height: 1.7;
+            padding-left: 20px;
+        }
+        
+        .achievement-box li {
+            margin-bottom: 15px;
+            position: relative;
+            list-style-type: none;
+            padding-left: 25px;
+        }
+        
+        .achievement-box li::before {
+            content: '•';
+            color: #03e1e1;
+            position: absolute;
+            left: 0;
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+        
+        /* Icon styling */
+        .box-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(45deg,  #00ffff, #03e1e1);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-align: center;
+        }
+        
+        /* Shine effect */
+        .achievement-box {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .achievement-box::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -75%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(
+                120deg,
+                rgba(255, 255, 255, 0.1) 0%,
+                rgba(255, 255, 255, 0.3) 50%,
+                rgba(255, 255, 255, 0.1) 100%
+            );
+            transform: skewX(-25deg);
+        }
+        
+        .achievement-box:hover::after {
+            animation: shine 0.75s ease-out forwards;
+            
+        }
+        
+        @keyframes shine {
+            100% {
+                left: 125%;
+            }
+        }
+        
+        
+        /* Image gallery styles */
+        .hackathon-images {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .hackathon-image {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 2px solid #09c6c6;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .hackathon-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px  #02c6c6;
+            border-color:  #03e1e1;
+        }
+        
+        /* Lightbox styles */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .lightbox.active {
+            display: flex;
+        }
+        
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 90%;
+            position: relative;
+        }
+        
+        .lightbox-img {
+            max-width: 100%;
+            max-height: 80vh;
+            border-radius: 10px;
+            border: 2px solid #02c6c6;
+            box-shadow: 0 0 30px #03e1e1;
+        }
+        
+        .close-lightbox {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            color: #fff;
+            font-size: 2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .close-lightbox:hover {
+            color: #03e1e1;
+            transform: scale(1.2);
+        }
+        
+        /* Responsive design */
+        @media (max-width: 1200px) {
+            .achievements-heading {
+                font-size: 2.4rem;
+            }
+            
+            .achievements-container {
+                flex-direction: column;
+                align-items: center;
+                gap: 1.5rem;
+            }
+            
+            .achievement-box {
+                min-height: auto;
+                min-width: 100%;
+                max-width: 600px;
+            }
+            
+            .divider {
+                width: 90%;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 1.2rem;
+                flex-direction: column;
+                height: auto;
+            }
+            
+            .navbar ul {
+                flex-direction: column;
+                gap: 10px;
+                width: 100%;
+            }
+            
+            .navbar ul li {
+                width: 100%;
+                text-align: center;
+            }
+            
+            .main-content {
+                padding: 12rem 1rem 4rem;
+            }
+            
+            .achievements-heading {
+                font-size: 2rem;
+            }
+            
+            .achievement-box {
+                padding: 1.8rem;
+            }
+            
+            .achievement-box h3 {
+                font-size: 1.5rem;
+            }
+            
+            .achievement-box ul {
+                font-size: 1rem;
+            }
+            
+            .divider {
+                width: 100%;
+                margin: 3rem auto;
+            }
+            
+            .hackathon-image {
+                width: 100px;
+                height: 100px;
+            }
+            
+            .lightbox-img {
+                max-height: 60vh;
+            }
+        }
